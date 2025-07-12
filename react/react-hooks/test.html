@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="xxxxxxxx.js"></script>
+</head>
+<body>
+  <div>
+    <button onclick="handle()"></button>
+  </div>
+
+  <script>
+    let btn = document.querySelector('button')
+    let num = 1
+    btn.innerText = num
+
+    function handle() {
+      num++
+      console.log(num);
+      // 多么希望有一个响应式方法，监听住这个 num，只要 num 更新值，
+      // 这个方法就会帮我触发视图更新
+    }
+  </script>
+</body>
+</html>
